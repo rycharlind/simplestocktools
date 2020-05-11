@@ -1,5 +1,8 @@
 # Simple Stock Tools - React App
 
+# NOTE
+The `master` branch is used for Github Pages.  See the `dev` branch for the main development branch.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
