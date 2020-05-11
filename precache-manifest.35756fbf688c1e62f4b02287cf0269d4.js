@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9af71a11fd6b02045e0bd28e5c6f22ba",
+    "revision": "58e85f2868fd43a7625c94e5f668c54d",
     "url": "/simplestocktools/index.html"
   },
   {
