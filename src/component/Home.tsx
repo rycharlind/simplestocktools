@@ -12,7 +12,9 @@ export default class Home extends React.Component {
                         An open-source React app that brings easy-to-use web tools for analyzing stock data. 
                     </p>
                     <p>
-                        <Button as="a" href="/options-calculator" variant="primary">Try the Stock Options Calculator</Button>
+                        <Button as="a" href={process.env.PUBLIC_URL + '/options-calc'} variant="primary">
+                            Try the Stock Options Calculator
+                        </Button>
                     </p>
                 </Jumbotron>
             </div>

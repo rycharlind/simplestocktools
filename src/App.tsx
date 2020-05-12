@@ -5,6 +5,7 @@ import Footer from './component/Footer';
 import Header from './component/Header';
 import Home from './component/Home';
 import OptionsProfileCalc from './component/OptionsProfitCalc';
+import PathUtil from './util/PathUtil';
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
       <div className="AppContent">
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route exact path={PathUtil.getPath('/')}>
               <Home></Home>
             </Route>
-            <Route path="/options-calculator">
+            <Route path={PathUtil.getPath('/options-calc')}>
               <OptionsProfileCalc></OptionsProfileCalc>
             </Route>
           </Switch>
