@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b4cb09445aa176272626dc7362ada7f",
+    "revision": "2c2b74ee531a27641dbbf9ea0aeb42df",
     "url": "/simplestocktools/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simplestocktools/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "b072f8fd864a3043c255",
+    "revision": "aa2980cb694a33e9651d",
     "url": "/simplestocktools/static/css/main.a892e9f5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simplestocktools/static/js/2.68a1209e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b072f8fd864a3043c255",
-    "url": "/simplestocktools/static/js/main.4e919bd1.chunk.js"
+    "revision": "aa2980cb694a33e9651d",
+    "url": "/simplestocktools/static/js/main.9e20ae49.chunk.js"
   },
   {
     "revision": "25b6bab15e4fe8866cdf",
