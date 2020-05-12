@@ -1,5 +1,7 @@
 # Simple Stock Tools - React App
 
+https://rycharlind.github.io/simplestocktools
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## NOTE
