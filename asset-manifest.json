@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/simplestocktools/static/css/main.a892e9f5.chunk.css",
-    "main.js": "/simplestocktools/static/js/main.5d213b6e.chunk.js",
-    "main.js.map": "/simplestocktools/static/js/main.5d213b6e.chunk.js.map",
-    "runtime-main.js": "/simplestocktools/static/js/runtime-main.741d24b6.js",
-    "runtime-main.js.map": "/simplestocktools/static/js/runtime-main.741d24b6.js.map",
+    "main.js": "/simplestocktools/static/js/main.4e919bd1.chunk.js",
+    "main.js.map": "/simplestocktools/static/js/main.4e919bd1.chunk.js.map",
+    "runtime-main.js": "/simplestocktools/static/js/runtime-main.79a0acc0.js",
+    "runtime-main.js.map": "/simplestocktools/static/js/runtime-main.79a0acc0.js.map",
     "static/css/2.de424728.chunk.css": "/simplestocktools/static/css/2.de424728.chunk.css",
-    "static/js/2.149b7f8e.chunk.js": "/simplestocktools/static/js/2.149b7f8e.chunk.js",
-    "static/js/2.149b7f8e.chunk.js.map": "/simplestocktools/static/js/2.149b7f8e.chunk.js.map",
+    "static/js/2.68a1209e.chunk.js": "/simplestocktools/static/js/2.68a1209e.chunk.js",
+    "static/js/2.68a1209e.chunk.js.map": "/simplestocktools/static/js/2.68a1209e.chunk.js.map",
     "index.html": "/simplestocktools/index.html",
-    "precache-manifest.f87ce7fca6d25edcbfc9847c9376f5de.js": "/simplestocktools/precache-manifest.f87ce7fca6d25edcbfc9847c9376f5de.js",
+    "precache-manifest.45ccb6a34af8d88a86e1d2e432a35cde.js": "/simplestocktools/precache-manifest.45ccb6a34af8d88a86e1d2e432a35cde.js",
     "service-worker.js": "/simplestocktools/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/simplestocktools/static/css/2.de424728.chunk.css.map",
     "static/css/main.a892e9f5.chunk.css.map": "/simplestocktools/static/css/main.a892e9f5.chunk.css.map",
-    "static/js/2.149b7f8e.chunk.js.LICENSE.txt": "/simplestocktools/static/js/2.149b7f8e.chunk.js.LICENSE.txt",
+    "static/js/2.68a1209e.chunk.js.LICENSE.txt": "/simplestocktools/static/js/2.68a1209e.chunk.js.LICENSE.txt",
     "static/media/github-logo.svg": "/simplestocktools/static/media/github-logo.5e2743b8.svg",
     "static/media/logo.svg": "/simplestocktools/static/media/logo.ed98c4a6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.741d24b6.js",
+    "static/js/runtime-main.79a0acc0.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.149b7f8e.chunk.js",
+    "static/js/2.68a1209e.chunk.js",
     "static/css/main.a892e9f5.chunk.css",
-    "static/js/main.5d213b6e.chunk.js"
+    "static/js/main.4e919bd1.chunk.js"
   ]
 }
