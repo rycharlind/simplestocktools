@@ -4,7 +4,7 @@ import './App.scss';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import Home from './component/Home';
-import OptionsProfileCalc from './component/OptionsProfitCalc';
+import OptionsProfileCalc from './component/options-profit-calc/OptionsProfitCalc';
 import PathUtil from './util/PathUtil';
 
 function App() {

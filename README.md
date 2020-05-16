@@ -1,11 +1,12 @@
 # Simple Stock Tools - React App
 
-https://rycharlind.github.io/simplestocktools
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo
+https://rycharlind.github.io/simplestocktools
+
 ## NOTE
-The `master` branch is used for Github Pages.  See the `dev` branch for the main development branch.
+The `master` branch is used for Github Pages.  The `dev` branch for the main development branch.
 
 ## Available Scripts
 

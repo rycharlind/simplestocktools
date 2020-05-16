@@ -8,9 +8,9 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Popover from 'react-bootstrap/Popover';
 import Table from 'react-bootstrap/Table';
 import NumberFormat from 'react-number-format';
+import InputPopover from './InputPopover';
 
 type State = {
     callOrPut: string;
@@ -28,48 +28,6 @@ type State = {
 const pillStyle: CSS.Properties = { padding: '3px', backgroundColor: '#546e7a', color: '#fff' };
 const resultValueStyle: CSS.Properties = { textAlign: 'right' };
 
-const popoverNumberOfContracts = (
-    <Popover id="popover-basic">
-        <Popover.Title as="h3"># of Contracts</Popover.Title>
-        <Popover.Content>
-            The total number of contracts that you will purchase for this trade.  
-            Each contract equals 100 shares of the underlying stock. 
-      </Popover.Content>
-    </Popover>
-);
-
-const popoverOptionPrice = (
-    <Popover id="popover-basic">
-        <Popover.Title as="h3">Option Price</Popover.Title>
-        <Popover.Content>
-            This is the price, or premium that you pay for each contract.  Your total investment will be the Option Price x # of Contracts. 
-            <a target="_new" href="https://www.investopedia.com/terms/o/option-premium.asp">Learn More</a>
-      </Popover.Content>
-    </Popover>
-);
-
-const popoverStrikePrice = (
-    <Popover id="popover-basic">
-        <Popover.Title as="h3">Strike Price</Popover.Title>
-        <Popover.Content>
-            The strike price is the target price at which your contract can be bought or sold when it is exercised.
-            In order to make a profit, you need the unerlying stock price to be greater than the stock price for a Call,
-            and less than for a Put. 
-            <a target="_new" href="https://www.investopedia.com/terms/s/strikeprice.asp">Learn More</a>
-      </Popover.Content>
-    </Popover>
-);
-
-const popoverStockPrice = (
-    <Popover id="popover-basic">
-        <Popover.Title as="h3">Stock Price</Popover.Title>
-        <Popover.Content>
-            This is the price of the stock that you think it will be at in the future.  
-            Change this up and down to see what price gets you the highest profit.
-      </Popover.Content>
-    </Popover>
-);
-
 const learnMoreUrl = "https://www.investopedia.com/articles/optioninvestor/03/073003.asp";
 
 export default class OptionsProfileCalc extends React.Component<any, State> {
@@ -78,10 +36,10 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
         super(prop);
         this.state = {
             callOrPut: 'call',
-            numberOfContracts: 5,
-            optionPrice: 1,
-            strikePrice: 50,
-            stockPrice: 70,
+            numberOfContracts: 1,
+            optionPrice: 37.15,
+            strikePrice: 2405,
+            stockPrice: 2406,
             totalInvestment: 0,
             stockPriceValue: 0,
             strikePriceValue: 0,
@@ -97,7 +55,6 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
 
     render() {
         return (
-
             <div>
                 <Jumbotron style={{ backgroundColor: '#37474f' }}>
                     <h1>Stock Options Profit Calculator</h1>
@@ -146,7 +103,12 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
                                             onChange={this.handleInputChange}
                                         />
                                         <InputGroup.Append>
-                                            <OverlayTrigger trigger="hover" placement="right" overlay={popoverNumberOfContracts}>
+                                            <OverlayTrigger trigger="hover" placement="right" overlay={
+                                                InputPopover.getPopover('# of Contracts', (
+                                                    <p>The total number of contracts that you will purchase for this trade.  
+                                                    Each contract equals 100 shares of the underlying stock.</p>
+                                                ))
+                                            }>
                                                 <Button variant="outline-secondary">?</Button>
                                             </OverlayTrigger>
                                         </InputGroup.Append>
@@ -167,7 +129,12 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
                                             onChange={this.handleInputChange}
                                         />
                                         <InputGroup.Append>
-                                            <OverlayTrigger trigger="hover" placement="right" overlay={popoverOptionPrice}>
+                                            <OverlayTrigger trigger="hover" placement="right" overlay={
+                                                InputPopover.getPopover('Option Price', (
+                                                    <p>This is the price, or premium that you pay for each contract.  Your total investment will be the Option Price x # of Contracts. 
+                                                    <a target="_new" href="https://www.investopedia.com/terms/o/option-premium.asp">Learn More</a></p>
+                                                ))
+                                            }>
                                                 <Button variant="outline-secondary">?</Button>
                                             </OverlayTrigger>
                                         </InputGroup.Append>
@@ -188,7 +155,14 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
                                             onChange={this.handleInputChange}
                                         />
                                         <InputGroup.Append>
-                                            <OverlayTrigger trigger="hover" placement="right" overlay={popoverStrikePrice}>
+                                            <OverlayTrigger trigger="hover" placement="right" overlay={
+                                                InputPopover.getPopover('Strike Price', (
+                                                    <p>The strike price is the target price at which your contract can be bought or sold when it is exercised.
+                                                    In order to make a profit, you need the unerlying stock price to be greater than the stock price for a Call,
+                                                    and less than for a Put. 
+                                                    <a target="_new" href="https://www.investopedia.com/terms/s/strikeprice.asp">Learn More</a></p>
+                                                ))
+                                            }>
                                                 <Button variant="outline-secondary">?</Button>
                                             </OverlayTrigger>
                                         </InputGroup.Append>
@@ -209,7 +183,12 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
                                             onChange={this.handleInputChange}
                                         />
                                         <InputGroup.Append>
-                                            <OverlayTrigger trigger="hover" placement="right" overlay={popoverStockPrice}>
+                                            <OverlayTrigger trigger="hover" placement="right" overlay={
+                                                InputPopover.getPopover('Stock Price', (
+                                                    <p>This is the price of the stock that you think it will be at in the future.  
+                                                    Change this up and down to see what price gets you the highest profit.</p>
+                                                ))
+                                            }>
                                                 <Button variant="outline-secondary">?</Button>
                                             </OverlayTrigger>
                                         </InputGroup.Append>
@@ -320,7 +299,7 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
 
         const alert = (
             <Alert variant="info" style={{marginTop: '16px'}}>
-                NOTE: Your total losses cannot exceed your total investment.
+                Your total losses cannot exceed your total investment if you do not exercise your optoins.
             </Alert>
         );
 
@@ -347,10 +326,6 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
 
         if (this.state.callOrPut === 'put') {
             profit = (strikePriceValue - stockPriceValue) - totalInvestment;
-        }
-
-        if (profit <= totalInvestment) {
-            profit = -totalInvestment;
         }
 
         this.setState({
