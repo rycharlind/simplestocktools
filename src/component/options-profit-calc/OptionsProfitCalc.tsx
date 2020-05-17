@@ -37,9 +37,9 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
         this.state = {
             callOrPut: 'call',
             numberOfContracts: 1,
-            optionPrice: 37.15,
-            strikePrice: 2405,
-            stockPrice: 2406,
+            optionPrice: 5.35,
+            strikePrice: 307.5,
+            stockPrice: 312.85,
             totalInvestment: 0,
             stockPriceValue: 0,
             strikePriceValue: 0,
@@ -319,9 +319,10 @@ export default class OptionsProfileCalc extends React.Component<any, State> {
     }
 
     calculate() {
-        const totalInvestment: number = Number(this.state.optionPrice) * (Number(this.state.numberOfContracts) * 100);
-        const stockPriceValue: number = totalInvestment * Number(this.state.stockPrice);
-        const strikePriceValue: number = totalInvestment * Number(this.state.strikePrice);
+        const numberOfStocks: number = Number(this.state.numberOfContracts) * 100;
+        const totalInvestment: number = Math.round(Number(this.state.optionPrice) * numberOfStocks);
+        const stockPriceValue: number = Math.round(numberOfStocks * Number(this.state.stockPrice));
+        const strikePriceValue: number = Math.round(numberOfStocks * Number(this.state.strikePrice));
         let profit: number = (stockPriceValue - strikePriceValue) - totalInvestment;
 
         if (this.state.callOrPut === 'put') {
