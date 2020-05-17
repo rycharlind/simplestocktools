@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/simplestocktools/static/css/main.a892e9f5.chunk.css",
-    "main.js": "/simplestocktools/static/js/main.72e615d3.chunk.js",
-    "main.js.map": "/simplestocktools/static/js/main.72e615d3.chunk.js.map",
+    "main.js": "/simplestocktools/static/js/main.478e94e7.chunk.js",
+    "main.js.map": "/simplestocktools/static/js/main.478e94e7.chunk.js.map",
     "runtime-main.js": "/simplestocktools/static/js/runtime-main.79a0acc0.js",
     "runtime-main.js.map": "/simplestocktools/static/js/runtime-main.79a0acc0.js.map",
     "static/css/2.de424728.chunk.css": "/simplestocktools/static/css/2.de424728.chunk.css",
     "static/js/2.aedd1d36.chunk.js": "/simplestocktools/static/js/2.aedd1d36.chunk.js",
     "static/js/2.aedd1d36.chunk.js.map": "/simplestocktools/static/js/2.aedd1d36.chunk.js.map",
     "index.html": "/simplestocktools/index.html",
-    "precache-manifest.ab5ba3d3d32db50f886037f1df8c71aa.js": "/simplestocktools/precache-manifest.ab5ba3d3d32db50f886037f1df8c71aa.js",
+    "precache-manifest.cb5c028f5dd0245ef13bc1bc175a4e56.js": "/simplestocktools/precache-manifest.cb5c028f5dd0245ef13bc1bc175a4e56.js",
     "service-worker.js": "/simplestocktools/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/simplestocktools/static/css/2.de424728.chunk.css.map",
     "static/css/main.a892e9f5.chunk.css.map": "/simplestocktools/static/css/main.a892e9f5.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.aedd1d36.chunk.js",
     "static/css/main.a892e9f5.chunk.css",
-    "static/js/main.72e615d3.chunk.js"
+    "static/js/main.478e94e7.chunk.js"
   ]
 }
